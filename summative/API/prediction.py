@@ -10,7 +10,7 @@ from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, ConfigDict, Field
 
-from summative.API.retrain import FEATURES, RetrainError, retrain
+from retrain import FEATURES, RetrainError, retrain
 
 MODEL_PATH = Path(__file__).resolve().parent / "best_model.pkl"
 
