@@ -63,7 +63,7 @@ COUNTRIES = ["Argentina",
       "United Kingdom of Great Britain and Northern Ireland",
       "United States of America",
       "Viet Nam",
-      "Other"]            # keep_countries.json + "Other"
+      "Other"]            
 ED_LEVELS = [
       "Associate degree (A.A., A.S., etc.)",
       "Bachelor\u2019s degree (B.A., B.S., B.Eng., etc.)",
@@ -126,7 +126,6 @@ ORG_SIZES = [
 YEARS_PRO_MAX = 15               # num_ranges from api_schema.json
 YEARS_CODE_MAX = 34
 NUM_LANGUAGES_MAX = 32
-# ---------------------------------------------------------------------------
 
 
 class SalaryInput(BaseModel):
@@ -152,14 +151,14 @@ app = FastAPI(title="Developer salary prediction API")
 
 # CORS: only the browser origins listed here may call this API from a web page.
 # Allowed: GET and POST (all the API uses), the Content-Type and Accept headers, and no cookies/credentials
-# because the API has no login. Restricted: every other website, method and header. We do not use "*"
+# because the API has no login. Restricted: every other website, method and header. I did not use "*"
 # because that would let any site on the internet call the API from a visitor's browser.
 # A Flutter mobile app is not a browser, so CORS does not apply to it.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://your-service.onrender.com",   # replace with your Render URL
-        "http://localhost:8080",               # replace with your Flutter web debug port, if you use one
+        "https://linear-regression-model-7hpc.onrender.com",  
+        "http://localhost:8080",               
     ],
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type", "Accept"],
