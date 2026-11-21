@@ -124,8 +124,8 @@ ORG_SIZES = [
       "I don\u2019t know",
       "Just me - I am a freelancer, sole proprietor, etc."]          # sorted unique OrgSize values
 YEARS_PRO_MAX = 15               # num_ranges from api_schema.json
-YEARS_CODE_MAX = 50
-NUM_LANGUAGES_MAX = 30
+YEARS_CODE_MAX = 34
+NUM_LANGUAGES_MAX = 32
 # ---------------------------------------------------------------------------
 
 
