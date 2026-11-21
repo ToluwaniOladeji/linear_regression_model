@@ -1,0 +1,8 @@
+summative/.venv
+summative/linear_regression/results.csv
+summative/linear_regression/api_schema.json
+summative/linear_regression/make_options.py
+summative/linear_regression/keep_countries.json
+summative/linear_regression/retrain_test.csv
+summative/linear_regression/best_model.pkl
+
